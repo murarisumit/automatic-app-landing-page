@@ -1,12 +1,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-{% if site.ios_app_id %}
+{% if site.data.appconfig.ios_app_id %}
 
 <script>
 
 $(function() {
 
-    var apiURL = "https://itunes.apple.com/lookup?id={{ site.ios_app_id }}&callback=?";
+    var apiURL = "https://itunes.apple.com/lookup?id={{ site.data.appconfig.ios_app_id }}&callback=?";
 
     $.getJSON(apiURL, function(json) {
 
