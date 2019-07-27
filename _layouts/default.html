@@ -52,5 +52,21 @@
                 </div>
             </div>
         </div>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.android-preview').slick({
+        infinite: true,
+        slidesToShow: 1,
+        lazyLoad: 'ondemand',
+        initialSlide: 1,
+        swipe: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+      });
+    });
+  </script>
+
 </body>
 </html>
