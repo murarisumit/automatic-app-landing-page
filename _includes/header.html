@@ -9,14 +9,14 @@
 					</clipPath>
 				</defs>
 			</svg>
-			<img class="headerIcon" src="{{ site.app_icon }}">
+			<img class="headerIcon" src="{{ site.data.appconfig.app_icon }}">
 		</div>
-		<p class="headerName">{{ site.app_name }}</p>
+		<p class="headerName">{{ site.data.appconfig.app_name }}</p>
 	</div>
 	<nav>
 		<ul>
-			{% if site.presskit_download_link %}
-			<li><a href="{{ site.presskit_download_link }}">Press Kit</a></li>
+			{% if site.data.appconfig.presskit_download_link %}
+			<li><a href="{{ site.data.appconfig.presskit_download_link }}">Press Kit</a></li>
 			{% endif %}
 		</ul>
 	</nav>
